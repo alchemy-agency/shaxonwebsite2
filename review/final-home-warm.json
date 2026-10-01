@@ -1,0 +1,18 @@
+{
+  "canvas": [
+    {
+      "splineObjectCount": "36",
+      "splinePalette": "shaxon-red-blue",
+      "splinePath": "TopPanel",
+      "splinePlayback": "scroll-scrubbed-state-tracks",
+      "splineProgress": "0.0000",
+      "splineRole": "belt",
+      "splineSrc": "/wp-content/plugins/shaxon-rebrand-system/assets/home/shaxon-logistics.splinecode?ver=1784171302",
+      "splineStatus": "ready",
+      "splineWarmFrames": "4",
+      "splineWarmState": "ready"
+    }
+  ],
+  "overflow": false,
+  "url": "http://127.0.0.1:8898/"
+}

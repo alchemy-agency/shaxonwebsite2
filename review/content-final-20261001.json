@@ -1,0 +1,227 @@
+[
+  {
+    "slug": "home",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "about-us",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "news-and-events",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 2
+  },
+  {
+    "slug": "news",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 1
+  },
+  {
+    "slug": "contact-us",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 14
+  },
+  {
+    "slug": "representatives",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 1
+  },
+  {
+    "slug": "shop",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "oem-catalog",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "wireways-catalog",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 2
+  },
+  {
+    "slug": "wireways",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 12
+  },
+  {
+    "slug": "copper-and-fiber-bulk-cable",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 11
+  },
+  {
+    "slug": "custom-cables",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "fiber-made-in-california",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "premise",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "enhanced-cabinets",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "fiber-optics",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "fiber-duct",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "computer-peripherals",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "electrical",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "maintenance",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "sfp-dac",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "compliance",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "careers",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 1
+  },
+  {
+    "slug": "locations",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 0
+  },
+  {
+    "slug": "my-account",
+    "copy_violations": [],
+    "coverage": 100.0,
+    "missing": [],
+    "bad_images": [],
+    "bad_links": [],
+    "excluded": 4
+  }
+]

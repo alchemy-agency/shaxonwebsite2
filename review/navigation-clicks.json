@@ -1,0 +1,122 @@
+[
+  {
+    "label": "Bulk Cables",
+    "expected": "/copper-and-fiber-bulk-cable/",
+    "url": "http://127.0.0.1:8899/copper-and-fiber-bulk-cable/",
+    "headline": "MANUFACTURED BULK COPPER & FIBER CABLE\n— FROM OUR FACTORY TO YOUR PROJECT"
+  },
+  {
+    "label": "Custom Cables",
+    "expected": "/custom-cables/",
+    "url": "http://127.0.0.1:8899/custom-cables/",
+    "headline": "TRANSFORM\nYOUR CONNECTIVITY"
+  },
+  {
+    "label": "Fiber Made in Orange, California",
+    "expected": "/fiber-made-in-california/",
+    "url": "http://127.0.0.1:8899/fiber-made-in-california/",
+    "headline": "MADE IN\nCALIFORNIA\nFIBER BY SHAXON"
+  },
+  {
+    "label": "Premise",
+    "expected": "/product-category/oem-catalog/premise/",
+    "url": "http://127.0.0.1:8899/product-category/oem-catalog/premise/",
+    "headline": "Premise"
+  },
+  {
+    "label": "Enhanced Cabinets",
+    "expected": "/product-category/oem-catalog/premise/enhanced-cabinets/",
+    "url": "http://127.0.0.1:8899/product-category/oem-catalog/premise/enhanced-cabinets/",
+    "headline": "Enhanced\nCabinets"
+  },
+  {
+    "label": "Fiber Duct",
+    "expected": "/product-category/oem-catalog/fiber-optics/fiber-duct/",
+    "url": "http://127.0.0.1:8899/product-category/oem-catalog/fiber-optics/fiber-duct/",
+    "headline": "Fiber\nDuct"
+  },
+  {
+    "label": "Fiber Optics",
+    "expected": "/product-category/oem-catalog/fiber-optics/",
+    "url": "http://127.0.0.1:8899/product-category/oem-catalog/fiber-optics/",
+    "headline": "Fiber\nOptics"
+  },
+  {
+    "label": "Computer Peripherals",
+    "expected": "/product-category/oem-catalog/computer-peripherals/",
+    "url": "http://127.0.0.1:8899/product-category/oem-catalog/computer-peripherals/",
+    "headline": "Computer\nPeripherals"
+  },
+  {
+    "label": "Electrical",
+    "expected": "/product-category/oem-catalog/electrical/",
+    "url": "http://127.0.0.1:8899/product-category/oem-catalog/electrical/",
+    "headline": "Electrical"
+  },
+  {
+    "label": "Maintenance",
+    "expected": "/product-category/oem-catalog/maintenance/",
+    "url": "http://127.0.0.1:8899/product-category/oem-catalog/maintenance/",
+    "headline": "Maintenance"
+  },
+  {
+    "label": "SFP+ DAC",
+    "expected": "/product-category/oem-catalog/10gsfpcu/",
+    "url": "http://127.0.0.1:8899/product-category/oem-catalog/10gsfpcu/",
+    "headline": "SFP+\nDAC"
+  },
+  {
+    "label": "Metal Wireways",
+    "expected": "/wireways/",
+    "url": "http://127.0.0.1:8899/wireways/",
+    "headline": "WIRE\nWAYS\nBY SHAXON"
+  },
+  {
+    "label": "About Us",
+    "expected": "/about-us/",
+    "url": "http://127.0.0.1:8899/about-us/",
+    "headline": "YEARS OF\nEXPERIENCE"
+  },
+  {
+    "label": "News & Events",
+    "expected": "/news-and-events/",
+    "url": "http://127.0.0.1:8899/news-and-events/",
+    "headline": "NEWS\n& EVENTS"
+  },
+  {
+    "label": "Compliance",
+    "expected": "/compliance/",
+    "url": "http://127.0.0.1:8899/compliance/",
+    "headline": "PROUDLY MADE IN ORANGE, CALIFORNIA — MEETING THE\nHIGHEST STANDARDS FOR TAA, BAA, AND BABA COMPLIANCE."
+  },
+  {
+    "label": "Contact Us",
+    "expected": "/contact-us/",
+    "url": "http://127.0.0.1:8899/contact-us/",
+    "headline": "CONTACT\nUS"
+  },
+  {
+    "label": "Representatives",
+    "expected": "/representatives/",
+    "url": "http://127.0.0.1:8899/representatives/",
+    "headline": "REPRESENTATIVES"
+  },
+  {
+    "label": "Careers",
+    "expected": "/careers/",
+    "url": "http://127.0.0.1:8899/careers/",
+    "headline": "WHY JOIN\nSHAXON?"
+  },
+  {
+    "label": "Locations",
+    "expected": "/locations/",
+    "url": "http://127.0.0.1:8899/locations/",
+    "headline": "LOCATIONS"
+  },
+  {
+    "label": "My Account",
+    "expected": "/my-account/",
+    "url": "http://127.0.0.1:8899/my-account/",
+    "headline": "MY\nACCOUNT"
+  }
+]

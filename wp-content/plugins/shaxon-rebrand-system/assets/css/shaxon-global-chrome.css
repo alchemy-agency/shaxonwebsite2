@@ -1,0 +1,636 @@
+/*
+ * Canonical homepage header and utility-menu parity for managed internal pages.
+ *
+ * Product-directory styling remains in the internal rebrand stylesheet; this
+ * file owns the global navbar and hamburger experience shared with the homepage.
+ */
+
+.sxr-site .site-header {
+	position: fixed;
+	z-index: 70;
+	top: max(1.15rem, calc(env(safe-area-inset-top) + 0.45rem));
+	left: 50%;
+	display: grid;
+	grid-template-columns: 9rem minmax(0, 1fr) auto;
+	align-items: center;
+	width: min(94vw, 94rem);
+	min-height: 4.2rem;
+	margin-bottom: 0;
+	padding: 0.45rem 0.55rem 0.45rem 1rem;
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 1.25rem;
+	background: rgba(5, 6, 8, 0.82);
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(18px);
+	transform: translateX(-50%);
+	transition: none;
+}
+
+.sxr-site .site-header::before,
+.sxr-site .site-header::after {
+	display: none;
+	content: none;
+}
+
+body.admin-bar .sxr-site .site-header {
+	top: calc(0.65rem + 32px);
+}
+
+.sxr-site .brand {
+	display: inline-flex;
+	align-items: center;
+	width: 6.3rem;
+	height: 3rem;
+}
+
+.sxr-site .brand img {
+	width: 100%;
+	max-height: 3.25rem;
+	object-fit: contain;
+}
+
+.sxr-site .nav-pill {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: clamp(0.3rem, 1vw, 1.15rem);
+	min-width: 0;
+}
+
+.sxr-site .nav-pill > a,
+.sxr-site .nav-pill > button {
+	position: relative;
+	padding: 0.65rem 0.35rem;
+	border: 0;
+	color: #f5f7fb;
+	background: none;
+	font-size: 0.72rem;
+	font-weight: 650;
+	letter-spacing: 0.045em;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: color 0.25s ease;
+}
+
+.sxr-site .nav-pill > a::after,
+.sxr-site .nav-pill > button::after {
+	position: absolute;
+	right: 0.35rem;
+	bottom: 0.35rem;
+	left: 0.35rem;
+	height: 1px;
+	content: "";
+	background: linear-gradient(90deg, var(--sxr-blue-bright), var(--sxr-red));
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.3s var(--sxr-ease);
+}
+
+.sxr-site .site-header .nav-pill > a[aria-current="page"] {
+	color: #fff;
+}
+
+.sxr-site .site-header .nav-pill > a[aria-current="page"]::after {
+	transform: scaleX(1);
+}
+
+.sxr-site .nav-pill > a:hover,
+.sxr-site .nav-pill > a:focus-visible,
+.sxr-site .nav-pill > button:hover,
+.sxr-site .nav-pill > button:focus-visible,
+.sxr-site .site-header .nav-pill > a[aria-current="page"]:hover,
+.sxr-site .site-header .nav-pill > a[aria-current="page"]:focus-visible {
+	color: #fff;
+}
+
+.sxr-site .nav-pill > a:hover::after,
+.sxr-site .nav-pill > a:focus-visible::after,
+.sxr-site .nav-pill > button:hover::after,
+.sxr-site .nav-pill > button:focus-visible::after,
+.sxr-site .site-header .nav-pill > a[aria-current="page"]:hover::after,
+.sxr-site .site-header .nav-pill > a[aria-current="page"]:focus-visible::after {
+	transform: scaleX(1);
+}
+
+.sxr-site .nav-products {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.sxr-site .site-header .nav-chevron {
+	width: 0.78rem;
+	height: 0.78rem;
+	color: var(--sxr-red);
+	transition: transform 0.3s var(--sxr-ease);
+}
+
+.sxr-site .nav-products[aria-expanded="true"] .nav-chevron {
+	transform: rotate(180deg);
+}
+
+.sxr-site .header-actions {
+	display: flex;
+	align-items: center;
+	gap: 0.32rem;
+}
+
+.sxr-site .site-header .icon-button,
+.sxr-site .site-header .menu-button {
+	position: relative;
+	display: inline-grid;
+	place-items: center;
+	width: 3rem;
+	height: 3rem;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 0.82rem;
+	color: #fff;
+	background: rgba(255, 255, 255, 0.04);
+	transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+
+.sxr-site .site-header :is(.sxr-icon-button, .sxr-menu-button) {
+	padding: 0 !important;
+	color: #fff !important;
+}
+
+.sxr-site .site-header :is(.sxr-icon-button, .sxr-menu-button) .sxr-icon {
+	display: block !important;
+	margin: 0 !important;
+	color: #fff !important;
+	stroke: #fff !important;
+}
+
+.sxr-site .site-header .icon-button:hover,
+.sxr-site .site-header .icon-button:focus-visible,
+.sxr-site .site-header .menu-button:hover,
+.sxr-site .site-header .menu-button:focus-visible {
+	border-color: rgba(255, 255, 255, 0.42);
+	background: rgba(255, 255, 255, 0.1);
+	transform: translateY(-2px);
+}
+
+.sxr-site .site-header .nav-icon,
+.sxr-site .site-header .menu-icon,
+.sxr-site .site-header .nav-chevron {
+	display: block;
+	flex: none;
+	fill: none;
+	stroke: currentColor;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.sxr-site .site-header .nav-icon,
+.sxr-site .site-header .menu-icon {
+	width: 1.22rem;
+	height: 1.22rem;
+	stroke-width: 1.75;
+}
+
+.sxr-site .site-header .cart-count {
+	position: absolute;
+	top: 0.25rem;
+	right: 0.25rem;
+	display: grid;
+	place-items: center;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	color: #fff;
+	background: var(--sxr-red);
+	font-size: 0.54rem;
+	font-weight: 800;
+	line-height: 1 !important;
+}
+
+.sxr-site .site-header .menu-button {
+	border-color: rgba(77, 115, 255, 0.45);
+	background: rgba(49, 84, 200, 0.16);
+	cursor: pointer;
+}
+
+.sxr-site .site-header .menu-icon {
+	transition: transform 0.3s var(--sxr-ease);
+}
+
+.sxr-site .site-header .menu-button[aria-expanded="true"] .menu-icon {
+	transform: rotate(90deg);
+}
+
+/* Product overlay buttons inherit aggressive blue fills from the legacy theme
+ * unless both background layers are reset at the component boundary. */
+.sxr-site .sxr-products-dialog > .sxr-overlay__backdrop {
+	width: 100%;
+	height: 100%;
+	padding: 0 !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	appearance: none;
+	color: transparent !important;
+	background-color: rgba(0, 0, 0, 0.82) !important;
+	background-image: none !important;
+	box-shadow: none !important;
+}
+
+.sxr-site .sxr-products-dialog .sxr-overlay__close,
+.sxr-site .sxr-products-dialog .sxr-overlay__close:hover,
+.sxr-site .sxr-products-dialog .sxr-overlay__close:focus-visible {
+	color: #fff !important;
+	background-color: transparent !important;
+	background-image: none !important;
+	box-shadow: none !important;
+}
+
+/*
+ * Utility menu parity.
+ *
+ * These are the canonical homepage class names as well as the internal SXR
+ * hooks. Keeping both on the same nodes prevents theme button rules from
+ * repainting the full-screen backdrop and makes the desktop/mobile menu
+ * hierarchy identical to the homepage.
+ */
+.sxr-site .utility-menu {
+	position: fixed;
+	z-index: 1000;
+	inset: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: visibility 0s 0.5s;
+}
+
+.sxr-site .utility-menu.is-opening,
+.sxr-site .utility-menu.is-open,
+.sxr-site .utility-menu.open {
+	visibility: visible;
+	pointer-events: auto;
+	transition-delay: 0s;
+}
+
+.sxr-site .utility-menu .utility-backdrop {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	appearance: none;
+	color: transparent;
+	background-color: rgba(0, 0, 0, 0.82) !important;
+	background-image: none !important;
+	box-shadow: none;
+	opacity: 0;
+	backdrop-filter: blur(10px);
+	cursor: default;
+	transition: opacity 0.45s ease;
+}
+
+.sxr-site .utility-menu.is-open .utility-backdrop,
+.sxr-site .utility-menu.open .utility-backdrop {
+	opacity: 1;
+}
+
+.sxr-site .utility-panel {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	width: min(92vw, 44rem);
+	height: 100%;
+	padding:
+		max(1.4rem, env(safe-area-inset-top))
+		max(2rem, env(safe-area-inset-right))
+		max(2rem, env(safe-area-inset-bottom))
+		max(2rem, env(safe-area-inset-left));
+	overflow: auto;
+	border-left: 1px solid rgba(255, 255, 255, 0.15);
+	color: #f5f7fb;
+	background:
+		radial-gradient(circle at 90% 10%, rgba(49, 84, 200, 0.2), transparent 25%),
+		#080a0f;
+	box-shadow: -2rem 0 7rem rgba(0, 0, 0, 0.52);
+	transform: translateX(102%);
+	transition: transform 0.55s var(--sxr-ease);
+}
+
+.sxr-site .utility-menu.is-open .utility-panel,
+.sxr-site .utility-menu.open .utility-panel {
+	transform: translateX(0);
+}
+
+.sxr-site .utility-top {
+	position: static;
+	z-index: auto;
+	top: auto;
+	display: flex;
+	flex: none;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 4.5rem;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+	background: transparent;
+	backdrop-filter: none;
+}
+
+.sxr-site .utility-top > span,
+.sxr-site .utility-contact span {
+	color: rgba(255, 255, 255, 0.36);
+	font-size: 0.54rem;
+	font-weight: 760;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+}
+
+.sxr-site .utility-top button {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+	min-width: 0;
+	min-height: 0;
+	padding: 0.55rem 0.65rem 0.55rem 1rem;
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	border-radius: 2rem;
+	color: #fff;
+	background: transparent;
+	box-shadow: none;
+	font-size: 0.54rem;
+	font-weight: 760;
+	letter-spacing: 0.13em;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.sxr-site .utility-top .close-icon {
+	display: grid;
+	place-items: center;
+	width: 1.9rem;
+	height: 1.9rem;
+	padding: 0.48rem;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+	stroke-width: 1.8;
+}
+
+.sxr-site .utility-panel .utility-primary-mobile {
+	display: none;
+}
+
+.sxr-site .utility-panel .utility-company-links {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem 0;
+}
+
+.sxr-site .utility-panel .utility-company-links > a {
+	display: grid;
+	grid-template-columns: 2.5rem minmax(0, 1fr) auto;
+	gap: 1rem;
+	align-items: center;
+	min-height: 6rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	color: #f5f7fb;
+}
+
+.sxr-site .utility-panel .utility-company-links > a > span {
+	color: var(--sxr-red);
+	font-size: 0.56rem;
+	font-weight: 760;
+	letter-spacing: 0.12em;
+}
+
+.sxr-site .utility-panel .utility-company-links > a strong {
+	font-size: clamp(1.4rem, 3vw, 2.6rem);
+	font-weight: 300;
+	letter-spacing: -0.05em;
+	line-height: 1.1;
+	transition: transform 0.3s var(--sxr-ease);
+}
+
+.sxr-site .utility-panel .utility-company-links > a:hover strong,
+.sxr-site .utility-panel .utility-company-links > a:focus-visible strong {
+	transform: translateX(0.6rem);
+}
+
+.sxr-site .utility-panel .sxr-external-arrow {
+	display: inline-block;
+	flex: none;
+	width: 1rem;
+	height: 1rem;
+	margin-left: 0.8rem;
+	vertical-align: middle;
+	transition: transform 0.25s ease;
+}
+
+.sxr-site .utility-panel a:hover .sxr-external-arrow,
+.sxr-site .utility-panel a:focus-visible .sxr-external-arrow {
+	transform: translate(0.18rem, -0.18rem);
+}
+
+/* Keep theme-level SVG and icon rules from separating header controls from
+ * their labels. These resets are intentionally scoped to the owned chrome. */
+.sxr-site .site-header :is(.sxr-icon, .nav-icon, .menu-icon, .nav-chevron) {
+	position: static !important;
+	inset: auto !important;
+	float: none !important;
+	max-width: none;
+}
+
+.sxr-site .site-header .nav-products .nav-chevron {
+	margin: 0 !important;
+}
+
+.sxr-site .site-header {
+	box-sizing: border-box;
+	max-width: calc(100vw - 2rem);
+}
+
+.sxr-site .utility-contact {
+	display: grid;
+	grid-template-columns: 1fr 1fr auto;
+	gap: 1rem;
+	align-items: end;
+	padding-top: 1.5rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.sxr-site .utility-contact > div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.sxr-site .utility-contact a,
+.sxr-site .utility-contact p {
+	margin: 0;
+	color: rgba(255, 255, 255, 0.76);
+	font-size: 0.78rem;
+}
+
+.sxr-site .utility-contact > a {
+	display: flex;
+	align-items: center;
+	gap: 0;
+	width: auto;
+	padding-bottom: 0.3rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	font-size: 0.58rem;
+	font-weight: 760;
+	letter-spacing: 0.1em;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+@media (max-width: 1180px) {
+	.sxr-site .site-header {
+		grid-template-columns: 7rem minmax(0, 1fr) auto;
+	}
+
+	.sxr-site .nav-pill {
+		gap: 0.2rem;
+	}
+
+	.sxr-site .nav-pill > a,
+	.sxr-site .nav-pill > button {
+		font-size: 0.62rem;
+	}
+}
+
+@media (max-width: 1080px) {
+	.sxr-site .site-header {
+		grid-template-columns: 1fr auto;
+		width: calc(100vw - max(1.5rem, calc(env(safe-area-inset-left) + env(safe-area-inset-right) + 0.5rem)));
+		min-height: 4rem;
+	}
+
+	.sxr-site .nav-pill {
+		display: none;
+	}
+
+	.sxr-site .brand {
+		width: 5.8rem;
+	}
+
+	.sxr-site .utility-panel .utility-primary-mobile {
+		display: grid;
+		flex: none;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0;
+		margin-top: 1.25rem;
+		padding: 0;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		border-left: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+	.sxr-site .utility-primary-mobile p {
+		grid-column: 1 / -1;
+		margin: 0;
+		padding: 0.8rem;
+		border-right: 1px solid rgba(255, 255, 255, 0.1);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		color: rgba(255, 255, 255, 0.35);
+		font-size: 0.52rem;
+		font-weight: 760;
+		letter-spacing: 0.14em;
+	}
+
+	.sxr-site .utility-primary-mobile a,
+	.sxr-site .utility-primary-mobile button {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 3.4rem;
+		padding: 0.75rem;
+		border: 0;
+		border-right: 1px solid rgba(255, 255, 255, 0.1);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		border-radius: 0;
+		color: rgba(255, 255, 255, 0.78);
+		background: rgba(255, 255, 255, 0.015);
+		box-shadow: none;
+		font-size: 0.7rem;
+		text-align: left;
+	}
+
+	.sxr-site .utility-primary-mobile .nav-chevron {
+		width: 1rem;
+		height: 1rem;
+		color: var(--sxr-red);
+	}
+}
+
+@media (max-width: 782px) {
+	body.admin-bar .sxr-site .site-header {
+		top: calc(0.65rem + 46px);
+	}
+}
+
+@media (max-width: 720px) {
+	.sxr-site .site-header {
+		top: max(0.6rem, calc(env(safe-area-inset-top) + 0.35rem));
+		width: calc(100vw - max(0.8rem, calc(env(safe-area-inset-left) + env(safe-area-inset-right) + 0.5rem)));
+		padding-left: 0.75rem;
+		border-radius: 1rem;
+	}
+
+	body.admin-bar .sxr-site .site-header {
+		top: calc(0.65rem + 46px);
+	}
+
+	.sxr-site .header-actions {
+		gap: 0.18rem;
+	}
+
+	.sxr-site .site-header .icon-button,
+	.sxr-site .site-header .menu-button {
+		width: 2.75rem;
+		height: 2.75rem;
+		border-radius: 0.72rem;
+	}
+
+	.sxr-site .site-header .nav-icon,
+	.sxr-site .site-header .menu-icon {
+		width: 1.05rem;
+		height: 1.05rem;
+	}
+
+	.sxr-site .site-header .cart-count {
+		top: 0.12rem;
+		right: 0.12rem;
+	}
+
+	.sxr-site .utility-panel {
+		width: 100%;
+		padding:
+			max(1rem, env(safe-area-inset-top))
+			max(1.2rem, env(safe-area-inset-right))
+			max(1.5rem, env(safe-area-inset-bottom))
+			max(1.2rem, env(safe-area-inset-left));
+	}
+
+	.sxr-site .utility-panel .utility-company-links {
+		flex: none;
+		padding-top: 1rem;
+	}
+
+	.sxr-site .utility-panel .utility-company-links > a {
+		min-height: 5rem;
+	}
+
+	.sxr-site .utility-contact {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.sxr-site .utility-contact > a {
+		grid-column: 1 / -1;
+		width: fit-content;
+	}
+}
+.sxr-site .utility-panel .utility-company-links > a > span {
+	color: var(--sxr-red-text, #ff6872);
+}

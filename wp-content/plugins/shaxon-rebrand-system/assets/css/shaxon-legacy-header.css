@@ -1,0 +1,49 @@
+/* The site's original Elementor header, shown while the rebrand navbar awaits client approval. */
+.sxr-legacy-header {
+	position: relative;
+	z-index: 1000;
+}
+
+/* Redesigned routes run their own sticky sections, so this header scrolls with the page. */
+.sxr-legacy-header .elementor-sticky--active {
+	position: relative !important;
+	top: auto !important;
+	width: auto !important;
+}
+
+.sxr-legacy-header .elementor-sticky__spacer {
+	display: none !important;
+}
+
+/* No fixed rebrand navbar overlays the content while the original header is in use. */
+body.sxr-legacy-header-active .sxr-site {
+	--sxr-header-height: 0px;
+}
+
+body.sxr-legacy-header-active .sx-home .site-header {
+	display: none !important;
+}
+
+.sxr-legacy-skip-link {
+	position: fixed;
+	z-index: 100001;
+	top: 0.75rem;
+	left: 0.75rem;
+	padding: 0.75rem 1rem;
+	color: #050608 !important;
+	background: #fff;
+	font: 700 0.9rem/1.2 "Open Sans", Arial, sans-serif;
+	text-decoration: none;
+	transform: translateY(-180%);
+	transition: transform 0.2s ease;
+}
+
+.sxr-legacy-skip-link:focus {
+	transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.sxr-legacy-skip-link {
+		transition: none;
+	}
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "home",
+    "route": "/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "about-us",
+    "route": "/about-us/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "news-and-events",
+    "route": "/news-and-events/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "news",
+    "route": "/news/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "contact-us",
+    "route": "/contact-us/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "representatives",
+    "route": "/representatives/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "shop",
+    "route": "/shop/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "oem-catalog",
+    "route": "/product-category/oem-catalog/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "wireways-catalog",
+    "route": "/product-category/wireways/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "wireways",
+    "route": "/wireways/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "copper-and-fiber-bulk-cable",
+    "route": "/copper-and-fiber-bulk-cable/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "custom-cables",
+    "route": "/custom-cables/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "fiber-made-in-california",
+    "route": "/fiber-made-in-california/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "premise",
+    "route": "/product-category/oem-catalog/premise/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "enhanced-cabinets",
+    "route": "/product-category/oem-catalog/premise/enhanced-cabinets/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "fiber-optics",
+    "route": "/product-category/oem-catalog/fiber-optics/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "fiber-duct",
+    "route": "/product-category/oem-catalog/fiber-optics/fiber-duct/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "computer-peripherals",
+    "route": "/product-category/oem-catalog/computer-peripherals/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "electrical",
+    "route": "/product-category/oem-catalog/electrical/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "maintenance",
+    "route": "/product-category/oem-catalog/maintenance/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "sfp-dac",
+    "route": "/product-category/oem-catalog/10gsfpcu/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "compliance",
+    "route": "/compliance/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "careers",
+    "route": "/careers/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "locations",
+    "route": "/locations/",
+    "status": 200,
+    "h1_count": 1
+  },
+  {
+    "slug": "my-account",
+    "route": "/my-account/",
+    "status": 200,
+    "h1_count": 1
+  }
+]

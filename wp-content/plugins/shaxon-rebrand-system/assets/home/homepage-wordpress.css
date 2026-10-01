@@ -1,0 +1,144 @@
+/*
+ * WordPress theme isolation for the canonical homepage.
+ *
+ * Storefront adds clearfix pseudo-elements to .site-header/.site-footer and a
+ * solid background to every .button. Those rules do not exist in the Vercel
+ * source and would otherwise alter the grid and secondary CTA.
+ */
+body.sxr-context-home {
+	margin: 0;
+	color: #f5f7fb;
+	background: #050608;
+}
+
+html:has(body.sxr-context-home) {
+	scroll-behavior: smooth;
+}
+
+.sx-home .site-header::before,
+.sx-home .site-header::after,
+.sx-home .site-footer::before,
+.sx-home .site-footer::after {
+	display: none;
+	content: none;
+}
+
+body.sxr-context-home .sx-home .site-header {
+	position: fixed;
+	z-index: 70;
+	top: max(1.15rem, calc(env(safe-area-inset-top) + 0.45rem));
+	left: 50%;
+	display: grid;
+	grid-template-columns: 9rem minmax(0, 1fr) auto;
+	align-items: center;
+	width: min(94vw, 94rem);
+	min-height: 4.2rem;
+	margin: 0;
+	padding: 0.45rem 0.55rem 0.45rem 1rem;
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 1.25rem;
+	color: #f5f7fb;
+	background: rgba(5, 6, 8, 0.82);
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.28);
+	backdrop-filter: blur(18px);
+	transform: translateX(-50%);
+}
+
+body.sxr-context-home .sx-home .site-header :where(.brand, .nav-pill, .header-actions) {
+	margin: 0;
+	padding-block: 0;
+	background: transparent;
+}
+
+body.sxr-context-home .sx-home .nav-pill :where(a, button),
+body.sxr-context-home .sx-home :where(.icon-button, .menu-button) {
+	color: #f5f7fb;
+}
+
+body.sxr-context-home .sx-home .nav-pill :where(a, button):visited {
+	color: #f5f7fb;
+}
+
+body.sxr-context-home .sx-home .site-footer :where(a, button),
+body.sxr-context-home .sx-home .site-footer :where(a, button):visited {
+	color: #f5f7fb;
+}
+
+body.sxr-context-home .sx-home .site-footer .footer-button,
+body.sxr-context-home .sx-home .site-footer .footer-button:visited {
+	color: #fff;
+	background: #d4142a;
+}
+
+body.sxr-context-home .sx-home .site-footer .footer-button:hover,
+body.sxr-context-home .sx-home .site-footer .footer-button:focus-visible {
+	color: #fff;
+	background: #a90f21;
+}
+
+body.sxr-context-home .sx-home :where(.icon-button, .menu-button) {
+	margin: 0;
+	padding: 0;
+	background: rgba(255, 255, 255, 0.055);
+}
+
+.sx-home .button-ghost {
+	color: #f5f7fb;
+	background: transparent;
+}
+
+.sx-home button,
+.sx-home .button {
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.sx-home,
+.sx-home :is(h1, h2, h3, h4, h5, h6),
+.sx-home .site-footer {
+	color: #f5f7fb;
+}
+
+.sx-home :where(h1, h2, h3, h4, h5, h6) {
+	overflow-wrap: normal;
+	word-break: normal;
+	hyphens: none;
+}
+
+.sx-home .connector-copy h2 em {
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.sx-home a,
+.sx-home button {
+	text-decoration: none;
+}
+
+.sx-home img {
+	border-radius: 0;
+}
+
+body.admin-bar .sx-home .site-header {
+	top: calc(0.65rem + 32px);
+}
+
+@media (max-width: 782px) {
+	body.admin-bar .sx-home .site-header {
+		top: calc(0.65rem + 46px);
+	}
+}
+
+@media (max-width: 1180px) {
+	body.sxr-context-home .sx-home .site-header {
+		grid-template-columns: 7rem minmax(0, 1fr) auto;
+	}
+}
+
+@media (max-width: 980px) {
+	body.sxr-context-home .sx-home .site-header {
+		grid-template-columns: 1fr auto;
+		width: calc(100vw - max(1.5rem, calc(env(safe-area-inset-left) + env(safe-area-inset-right) + 0.5rem)));
+		min-height: 4rem;
+	}
+}
